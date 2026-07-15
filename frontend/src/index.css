@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "EB Garamond", serif;
+  --font-body: Geist, "Geist Fallback", sans-serif;
+}
