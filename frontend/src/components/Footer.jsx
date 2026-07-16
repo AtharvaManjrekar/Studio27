@@ -25,69 +25,94 @@ function Footer() {
         <h4 className="text-xl text-center text-[#EBE6EA] font-body font-light">
           Book your appointment today and experience the Studio 27 difference
         </h4>
-        <button className="m-auto block mt-10 px-10 py-4 bg-white text-[#762E61] font-bold font-body text-lg rounded-lg">
+        <button className="m-auto block mt-10 px-10 py-4 bg-white text-[#762E61] cursor-pointer font-bold font-body text-lg rounded-lg hover:-translate-y-3 hover:duration-300 hover:bg-pink-200 hover:shadow-2xl hover:shadow-black">
           <Link to="/booking">Book Your Appointment</Link>
         </button>
       </div>
-      <div className="main_footer bg-[#86487A] flex justify-around">
-        <div className="first w-1/5">
-          <div className="studio">Studio 27</div>
-          <div className="description">
+      <div className="main_footer bg-[#86487A] text-white flex justify-between px-20 py-16">
+        {/* Studio */}
+        <div className="first w-[23%]">
+          <h2 className="font-heading text-3xl font-bold mb-6">Studio 27</h2>
+
+          <p className="font-body text-lg text-white/80 leading-8">
             Premium salon experiences crafted with passion and expertise.
-          </div>
+          </p>
         </div>
-        <div className="first w-2/5">
-          <div className="quick">Quick Links</div>
-          <h6>
+
+        {/* Quick Links */}
+        <div className="first w-[18%]">
+          <h3 className="font-heading text-3xl font-semibold mb-6">
+            Quick Links
+          </h3>
+
+          <div className="flex flex-col gap-4 font-body text-lg">
             <Link to="/service">Services</Link>
-          </h6>
-          <h6>
             <Link to="/gallery">Gallery</Link>
-          </h6>
-          <h6>
             <Link to="/about">About Us</Link>
-          </h6>
-          <h6>
             <Link to="/contact">Contact</Link>
-          </h6>
+          </div>
         </div>
-        <div className="first w-2/5">
-          <div className="contact">Contact</div>
 
-          <div className="address_set">
-            <FontAwesomeIcon
-              icon={faLocationDot}
-              className="text-[#762E61] text-2xl"
-            />{" "}
-            <span>123 Luxury Lane, Fashion District</span>
+        {/* Contact */}
+        <div className="first w-[30%]">
+          <h3 className="font-heading text-3xl font-semibold mb-6">Contact</h3>
+
+          <div className="space-y-5 font-body text-lg">
+            <div className="flex items-start gap-4">
+              <FontAwesomeIcon icon={faLocationDot} className="text-xl mt-1" />
+              <span>123 Luxury Lane, Fashion District</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <FontAwesomeIcon icon={faPhone} className="text-xl" />
+              <span>+91 9594257690</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
+              <span>atharvamanjrekar078@gmail.com</span>
+            </div>
           </div>
-          <div className="address_set">
-            <FontAwesomeIcon
-              icon={faPhone}
-              className="text-[#762E61] text-2xl"
-            />
-            <span>+91 9594257690</span>
+        </div>
+
+        {/* Hours */}
+        <div className="first w-[22%]">
+          <h3 className="font-heading text-3xl font-semibold mb-6">Hours</h3>
+
+          <div className="flex gap-4 font-body text-lg">
+            <FontAwesomeIcon icon={faClock} className="text-xl mt-1" />
+
+            <div>
+              <p>Mon-Fri: 10am - 7pm</p>
+              <p>Sat: 10am - 6pm</p>
+              <p>Sun: Closed</p>
+            </div>
           </div>
 
-          <div className="address_set">
+          <div className="flex gap-6 mt-8 text-2xl pl-10">
             <FontAwesomeIcon
-              icon={faEnvelope}
-              className="text-[#762E61] text-2xl"
+              icon={faInstagram}
+              className="cursor-pointer hover:text-pink-300 transition"
             />
-            <span>atharvamanjrekar078@gmail.com</span>
+
+            <FontAwesomeIcon
+              icon={faFacebookF}
+              className="cursor-pointer hover:text-blue-300 transition"
+            />
+
+            <FontAwesomeIcon
+              icon={faXTwitter}
+              className="cursor-pointer hover:text-gray-300 transition"
+            />
           </div>
         </div>
-        <div className="first w-2/5">
-          <div className="hours">Hours</div>
-          <div className="time">
-            <FontAwesomeIcon icon={faClock} /> <span>Mon-Fri: 10am-7pm <br/> Sat: 10 am - 6pm <br/> Sun: Closed </span>
-          </div>
-          <div className="follow">
-            <FontAwesomeIcon icon={faInstagram} />
-            <FontAwesomeIcon icon={faXTwitter} />
-            <FontAwesomeIcon icon={faFacebookF} />
-          </div>
-        </div>
+      </div>
+
+
+      <hr className="border-white/20 mx-20" />
+
+      <div className="bg-[#86487A] text-center py-6 text-white/80 font-body">
+        © 2026 Studio 27. All rights reserved. | Designed with elegance.
       </div>
     </div>
   );
