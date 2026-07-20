@@ -10,6 +10,7 @@ import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Service from "./pages/Service";
+import Footer from "./components/Footer";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -20,12 +21,13 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About/>}/>
-        <Route path="/service" element={<Service/>}/>
-        <Route path="/gallery" element={<Gallery/>}/>
-        <Route path="/booking" element={<Booking/>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

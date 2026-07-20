@@ -425,9 +425,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/* Footer Section */}
-      <Footer />
     </div>
   );
 }
