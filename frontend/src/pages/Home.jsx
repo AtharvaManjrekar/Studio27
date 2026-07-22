@@ -20,7 +20,7 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <div>
-      {/* <Navbar/> */}
+      
       <div className="hero h-screen relative">
         {/* Pink Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(107,59,74,0.6)_100%)]"></div>
